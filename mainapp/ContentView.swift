@@ -889,39 +889,92 @@ struct SoundsView: View {
     private let transcriptSegments = TranscriptSegment.lessonSample
 
     var body: some View {
-        VStack(alignment: .leading, spacing: DesignTokens.Spacing.elementSpacing) {
-            VStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
-                HStack(spacing: DesignTokens.Spacing.smallSpacing) {
-                    Button(action: playbackController.togglePlayback) {
-                        Image(systemName: playbackController.isPlaying ? "pause.fill" : "play.fill")
-                            .font(.system(size: 18, weight: .bold))
-                            .frame(width: 44, height: 44)
-                            .foregroundColor(.white)
-                    }
-                    .buttonStyle(PlaybackButtonStyle(isActive: playbackController.isPlaying))
+        ZStack(alignment: .top) {
+            LinearGradient(
+                colors: [
+                    DesignTokens.Colors.discordGradientTop,
+                    DesignTokens.Colors.discordGradientBottom
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
 
+            VStack(spacing: DesignTokens.Spacing.moduleSpacing) {
+                headerSection
+
+                playbackCard
+
+                transcriptCard
+
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, DesignTokens.Spacing.padding)
+            .padding(.top, DesignTokens.Spacing.moduleSpacing * 1.5)
+            .padding(.bottom, DesignTokens.Spacing.moduleSpacing)
+            .frame(maxWidth: .infinity, alignment: .top)
+        }
+    }
+
+    private var headerSection: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Label {
+                Text("声音热身")
+                    .font(.system(size: 28, weight: .semibold, design: .rounded))
+                    .foregroundColor(DesignTokens.Colors.discordTextPrimary)
+            } icon: {
+                Image(systemName: "waveform.circle.fill")
+                    .font(.system(size: 28, weight: .semibold))
+                    .foregroundColor(DesignTokens.Colors.primary)
+            }
+
+            Text("跟随音频练习连读与语调，让耳朵快速热起来。")
+                .font(DesignTokens.Typography.body)
+                .foregroundColor(DesignTokens.Colors.textSecondary)
+        }
+        .frame(maxWidth: 520, alignment: .leading)
+    }
+
+    private var playbackCard: some View {
+        VStack(alignment: .leading, spacing: DesignTokens.Spacing.elementSpacing) {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("当前练习")
+                    .font(.system(size: 18, weight: .semibold, design: .rounded))
+                    .foregroundColor(DesignTokens.Colors.discordTextPrimary)
+
+                Text("Daily Listening Warm-up — 1/5")
+                    .font(DesignTokens.Typography.caption)
+                    .foregroundColor(DesignTokens.Colors.textSecondary)
+            }
+
+            HStack(alignment: .center, spacing: DesignTokens.Spacing.elementSpacing) {
+                Button(action: playbackController.togglePlayback) {
+                    Image(systemName: playbackController.isPlaying ? "pause.fill" : "play.fill")
+                        .font(.system(size: 20, weight: .bold))
+                        .frame(width: 48, height: 48)
+                        .foregroundColor(.white)
+                }
+                .buttonStyle(PlaybackButtonStyle(isActive: playbackController.isPlaying))
+
+                VStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
                     ProgressView(value: playbackController.progress)
                         .progressViewStyle(.linear)
                         .tint(DesignTokens.Colors.primary)
                         .frame(maxWidth: .infinity)
-                }
+                        .padding(.vertical, 4)
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(DesignTokens.Colors.discordInputBackground.opacity(0.75))
+                        )
+                        .padding(.trailing, 4)
 
-                HStack {
-                    Text(formatTime(playbackController.currentTime))
-                        .font(DesignTokens.Typography.caption.monospacedDigit())
-                        .foregroundColor(DesignTokens.Colors.textSecondary)
+                    HStack {
+                        CapsuleTimeLabel(text: formatTime(playbackController.currentTime))
 
-                    Spacer()
+                        Spacer()
 
-                    Text(formatTime(playbackController.duration, placeholder: "--:--"))
-                        .font(DesignTokens.Typography.caption.monospacedDigit())
-                        .foregroundColor(DesignTokens.Colors.textSecondary)
-                }
-            }
-
-            VStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
-                ForEach(transcriptSegments) { segment in
-                    transcriptRow(for: segment)
+                        CapsuleTimeLabel(text: formatTime(playbackController.duration, placeholder: "--:--"))
+                    }
                 }
             }
 
@@ -931,10 +984,41 @@ struct SoundsView: View {
                     .foregroundColor(DesignTokens.Colors.error)
             }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, DesignTokens.Spacing.padding)
+        .padding(DesignTokens.Spacing.padding)
+        .frame(maxWidth: 520, alignment: .leading)
         .cardStyle()
-        .containerPadding()
+    }
+
+    private var transcriptCard: some View {
+        VStack(alignment: .leading, spacing: DesignTokens.Spacing.elementSpacing) {
+            HStack(alignment: .top, spacing: DesignTokens.Spacing.smallSpacing) {
+                Image(systemName: "text.book.closed.fill")
+                    .font(.system(size: 22, weight: .semibold))
+                    .foregroundColor(DesignTokens.Colors.primary)
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("逐句稿")
+                        .font(.system(size: 18, weight: .semibold, design: .rounded))
+                        .foregroundColor(DesignTokens.Colors.discordTextPrimary)
+
+                    Text("认真对照文本，留意连读、语调与停顿。")
+                        .font(DesignTokens.Typography.caption)
+                        .foregroundColor(DesignTokens.Colors.textSecondary)
+                }
+            }
+
+            Divider()
+                .overlay(DesignTokens.Colors.border)
+
+            VStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
+                ForEach(transcriptSegments) { segment in
+                    transcriptRow(for: segment)
+                }
+            }
+        }
+        .padding(DesignTokens.Spacing.padding)
+        .frame(maxWidth: 520, alignment: .leading)
+        .cardStyle()
     }
 
     private func formatTime(_ time: TimeInterval, placeholder: String = "00:00") -> String {
@@ -950,21 +1034,45 @@ struct SoundsView: View {
     private func transcriptRow(for segment: TranscriptSegment) -> some View {
         let isActive = segment.contains(playbackController.progress)
 
-        Text(segment.text)
-            .font(DesignTokens.Typography.body)
-            .foregroundColor(isActive ? DesignTokens.Colors.primary : DesignTokens.Colors.textPrimary)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.vertical, 8)
-            .padding(.horizontal, 12)
+        HStack(alignment: .top, spacing: DesignTokens.Spacing.smallSpacing) {
+            Circle()
+                .fill(isActive ? DesignTokens.Colors.primary : DesignTokens.Colors.border)
+                .frame(width: 8, height: 8)
+                .padding(.top, 6)
+
+            Text(segment.text)
+                .font(DesignTokens.Typography.body)
+                .foregroundColor(isActive ? DesignTokens.Colors.primary : DesignTokens.Colors.textPrimary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 14)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(isActive ? DesignTokens.Colors.primary.opacity(0.12) : DesignTokens.Colors.backgroundSecondary)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 14)
+                .stroke(isActive ? DesignTokens.Colors.primary.opacity(0.35) : DesignTokens.Colors.border, lineWidth: 1)
+        )
+        .shadow(color: DesignTokens.Colors.textPrimary.opacity(isActive ? 0.08 : 0.04), radius: 6, x: 0, y: 2)
+        .animation(.easeInOut(duration: 0.25), value: isActive)
+    }
+}
+
+private struct CapsuleTimeLabel: View {
+    let text: String
+
+    var body: some View {
+        Text(text)
+            .font(DesignTokens.Typography.caption.monospacedDigit())
+            .foregroundColor(DesignTokens.Colors.discordTextPrimary)
+            .padding(.vertical, 4)
+            .padding(.horizontal, 10)
             .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(isActive ? DesignTokens.Colors.primary.opacity(0.12) : Color.clear)
+                Capsule()
+                    .fill(DesignTokens.Colors.discordInputBackground.opacity(0.85))
             )
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(isActive ? DesignTokens.Colors.primary.opacity(0.4) : DesignTokens.Colors.border, lineWidth: 1)
-            )
-            .animation(.easeInOut(duration: 0.2), value: isActive)
     }
 }
 

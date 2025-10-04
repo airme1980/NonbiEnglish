@@ -1,0 +1,38 @@
+{
+  "images" : [
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3 3.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3 4.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "u8126179569_plain_pastel_green_background_with_simple_falling_7b1b8cac-c2bf-40f3-8250-bef4641e723f_3 5.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

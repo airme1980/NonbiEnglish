@@ -1,4 +1,5 @@
 import SwiftUI
+import Foundation
 import AVFoundation
 
 // MARK: - Design Tokens
@@ -168,6 +169,7 @@ struct ContentView: View {
                 alertMessage = "用户名或密码无效。请尝试 'admin' / 'password123'"
             }
         }
+        //.onAppear(perform: loadTranscript)
     }
 }
 
@@ -885,8 +887,7 @@ struct VocabularyCardView: View {
 // MARK: - SoundsView View
 struct SoundsView: View {
     @StateObject private var playbackController = SoundPlaybackController(resourceName: "lessonSound")
-
-    private let transcriptSegments = TranscriptSegment.lessonSample
+    @StateObject private var transcriptLoader = TranscriptLoader()
 
     var body: some View {
         ZStack(alignment: .top) {
@@ -914,12 +915,18 @@ struct SoundsView: View {
             .padding(.bottom, DesignTokens.Spacing.moduleSpacing)
             .frame(maxWidth: .infinity, alignment: .top)
         }
+        .task {
+            transcriptLoader.loadIfNeeded()
+        }
+        .onAppear {
+            transcriptLoader.loadIfNeeded()
+        }
     }
 
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 6) {
             Label {
-                Text("声音热身")
+                Text("听力练习")
                     .font(.system(size: 28, weight: .semibold, design: .rounded))
                     .foregroundColor(DesignTokens.Colors.discordTextPrimary)
             } icon: {
@@ -927,10 +934,6 @@ struct SoundsView: View {
                     .font(.system(size: 28, weight: .semibold))
                     .foregroundColor(DesignTokens.Colors.primary)
             }
-
-            Text("跟随音频练习连读与语调，让耳朵快速热起来。")
-                .font(DesignTokens.Typography.body)
-                .foregroundColor(DesignTokens.Colors.textSecondary)
         }
         .frame(maxWidth: 520, alignment: .leading)
     }
@@ -938,13 +941,9 @@ struct SoundsView: View {
     private var playbackCard: some View {
         VStack(alignment: .leading, spacing: DesignTokens.Spacing.elementSpacing) {
             VStack(alignment: .leading, spacing: 6) {
-                Text("当前练习")
+                Text("LessonSound")
                     .font(.system(size: 18, weight: .semibold, design: .rounded))
                     .foregroundColor(DesignTokens.Colors.discordTextPrimary)
-
-                Text("Daily Listening Warm-up — 1/5")
-                    .font(DesignTokens.Typography.caption)
-                    .foregroundColor(DesignTokens.Colors.textSecondary)
             }
 
             HStack(alignment: .center, spacing: DesignTokens.Spacing.elementSpacing) {
@@ -997,11 +996,11 @@ struct SoundsView: View {
                     .foregroundColor(DesignTokens.Colors.primary)
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("逐句稿")
+                    Text("逐句跟听")
                         .font(.system(size: 18, weight: .semibold, design: .rounded))
                         .foregroundColor(DesignTokens.Colors.discordTextPrimary)
 
-                    Text("认真对照文本，留意连读、语调与停顿。")
+                    Text("反复练习，提高听力和理解能力。")
                         .font(DesignTokens.Typography.caption)
                         .foregroundColor(DesignTokens.Colors.textSecondary)
                 }
@@ -1009,10 +1008,44 @@ struct SoundsView: View {
 
             Divider()
                 .overlay(DesignTokens.Colors.border)
+            Group {
+                if let errorMessage = transcriptLoader.errorMessage {
+                    HStack(alignment: .center, spacing: DesignTokens.Spacing.smallSpacing) {
+                        Text(errorMessage)
+                            .font(DesignTokens.Typography.caption)
+                            .foregroundColor(DesignTokens.Colors.error)
 
-            VStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
-                ForEach(transcriptSegments) { segment in
-                    transcriptRow(for: segment)
+                        Spacer(minLength: DesignTokens.Spacing.smallSpacing)
+
+                        Button("重试") {
+                            transcriptLoader.reload()
+                        }
+                        .font(DesignTokens.Typography.caption)
+                        .buttonStyle(.bordered)
+                        .tint(DesignTokens.Colors.primary)
+                    }
+                    .padding(.vertical, 12)
+                } else if transcriptLoader.isLoading {
+                    HStack(spacing: DesignTokens.Spacing.smallSpacing) {
+                        ProgressView()
+                            .tint(DesignTokens.Colors.primary)
+
+                        Text("正在加载课文...")
+                            .font(DesignTokens.Typography.caption)
+                            .foregroundColor(DesignTokens.Colors.textSecondary)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 12)
+                } else {
+                    ScrollView {
+                        LazyVStack(alignment: .leading, spacing: DesignTokens.Spacing.smallSpacing) {
+                            ForEach(transcriptLoader.segments) { segment in
+                                transcriptRow(for: segment)
+                            }
+                        }
+                        .padding(.vertical, 4)
+                    }
+                    .frame(maxHeight: 400)
                 }
             }
         }
@@ -1030,33 +1063,25 @@ struct SoundsView: View {
         return String(format: "%02d:%02d", minutes, seconds)
     }
 
-    @ViewBuilder
     private func transcriptRow(for segment: TranscriptSegment) -> some View {
-        let isActive = segment.contains(playbackController.progress)
+        let isActive: Bool
+        if playbackController.duration > 0 {
+            isActive = segment.contains(currentTime: playbackController.currentTime)
+        } else {
+            isActive = segment.contains(progress: playbackController.progress)
+        }
 
-        HStack(alignment: .top, spacing: DesignTokens.Spacing.smallSpacing) {
-            Circle()
-                .fill(isActive ? DesignTokens.Colors.primary : DesignTokens.Colors.border)
-                .frame(width: 8, height: 8)
-                .padding(.top, 6)
+        return HStack(alignment: .top, spacing: DesignTokens.Spacing.smallSpacing) {
 
             Text(segment.text)
-                .font(DesignTokens.Typography.body)
+                //.font(isActive ? DesignTokens.Typography.body.bold() : DesignTokens.Typography.body)
                 .foregroundColor(isActive ? DesignTokens.Colors.primary : DesignTokens.Colors.textPrimary)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(isActive ? DesignTokens.Colors.backgroundPrimary : Color.clear)
+                //.frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.vertical, 10)
         .padding(.horizontal, 14)
-        .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(isActive ? DesignTokens.Colors.primary.opacity(0.12) : DesignTokens.Colors.backgroundSecondary)
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 14)
-                .stroke(isActive ? DesignTokens.Colors.primary.opacity(0.35) : DesignTokens.Colors.border, lineWidth: 1)
-        )
-        .shadow(color: DesignTokens.Colors.textPrimary.opacity(isActive ? 0.08 : 0.04), radius: 6, x: 0, y: 2)
-        .animation(.easeInOut(duration: 0.25), value: isActive)
+        //.animation(.easeInOut(duration: 0.25), value: isActive)
     }
 }
 
@@ -1076,42 +1101,176 @@ private struct CapsuleTimeLabel: View {
     }
 }
 
+@MainActor
+private final class TranscriptLoader: ObservableObject {
+    @Published private(set) var segments: [TranscriptSegment] = []
+    @Published private(set) var errorMessage: String?
+    @Published private(set) var isLoading = false
+
+    private var didAttemptLoad = false
+
+    func loadIfNeeded(bundle: Bundle = .main) {
+        guard !didAttemptLoad else { return }
+        didAttemptLoad = true
+        load(bundle: bundle)
+    }
+
+    func reload(bundle: Bundle = .main) {
+        didAttemptLoad = true
+        load(bundle: bundle)
+    }
+
+    private func load(bundle: Bundle) {
+        isLoading = true
+        errorMessage = nil
+
+        do {
+            let segments = try TranscriptSegment.loadLessonSound(from: bundle)
+            self.segments = segments
+        } catch {
+            self.errorMessage = error.localizedDescription
+            self.segments = []
+        }
+
+        isLoading = false
+    }
+}
+
 private struct TranscriptSegment: Identifiable {
-    let id = UUID()
+    let id: UUID
     let text: String
     let range: ClosedRange<Double>
+    let startTime: TimeInterval
+    let endTime: TimeInterval
 
-    func contains(_ progress: Double) -> Bool {
+    init(id: UUID = UUID(), text: String, range: ClosedRange<Double>, startTime: TimeInterval, endTime: TimeInterval) {
+        self.id = id
+        self.text = text
+        self.range = range
+        self.startTime = startTime
+        self.endTime = endTime
+    }
+
+    func contains(progress: Double) -> Bool {
         guard !range.isEmpty else { return false }
         let clamped = max(0, min(progress, 1))
-        if range.upperBound == 1 {
+        if abs(range.upperBound - 1) < 0.0005 {
             return clamped >= range.lowerBound && clamped <= range.upperBound
         }
         return clamped >= range.lowerBound && clamped < range.upperBound
     }
 
-    static let lessonSample: [TranscriptSegment] = [
-        TranscriptSegment(
-            text: "Welcome to today's listening warm-up. 你好，欢迎来到今天的听力热身。",
-            range: 0.0...0.18
-        ),
-        TranscriptSegment(
-            text: "Focus on the rhythm as you hear each phrase. 请留意每一句的节奏。",
-            range: 0.18...0.38
-        ),
-        TranscriptSegment(
-            text: "Repeat softly after the narrator to build confidence. 跟着朗读者轻声复述，建立自信。",
-            range: 0.38...0.6
-        ),
-        TranscriptSegment(
-            text: "Notice the linking sounds and intonation. 注意连读和语调的变化。",
-            range: 0.6...0.82
-        ),
-        TranscriptSegment(
-            text: "Great job! Take a breath and get ready for the next challenge. 做得很好！深呼吸，准备迎接下一个挑战。",
-            range: 0.82...1.0
-        )
-    ]
+    func contains(currentTime: TimeInterval) -> Bool {
+        guard endTime > startTime else { return false }
+        let clamped = max(0, currentTime)
+        if abs(clamped - endTime) < 0.05 {
+            return true
+        }
+        return clamped >= startTime && clamped < endTime
+    }
+
+    static func loadLessonSound(from bundle: Bundle) throws -> [TranscriptSegment] {
+        guard let url = bundle.url(forResource: "lessonSound", withExtension: "json") else {
+            throw LoadError.missingResource
+        }
+
+        let data: Data
+        do {
+            data = try Data(contentsOf: url)
+        } catch {
+            throw LoadError.unreadableFile
+        }
+
+        let decoder = JSONDecoder()
+        let payload: LessonSoundTranscript
+        do {
+            payload = try decoder.decode(LessonSoundTranscript.self, from: data)
+        } catch {
+            throw LoadError.decodingFailed
+        }
+
+        guard !payload.transcription.isEmpty else {
+            throw LoadError.emptyTranscript
+        }
+
+        guard let totalDuration = payload.transcription.map({ $0.offsets.to }).max(), totalDuration > 0 else {
+            throw LoadError.invalidDuration
+        }
+
+        let segments = payload.transcription.compactMap { entry -> TranscriptSegment? in
+            let trimmed = entry.text.normalizedTranscript
+            guard !trimmed.isEmpty else { return nil }
+
+            let start = max(0, min(entry.offsets.from, totalDuration))
+            let end = max(start, min(entry.offsets.to, totalDuration))
+            guard end > start else { return nil }
+
+            let lower = max(0, min(start / totalDuration, 1))
+            let upper = max(lower, min(end / totalDuration, 1))
+
+            return TranscriptSegment(text: trimmed, range: lower...upper, startTime: start, endTime: end)
+        }
+
+        guard !segments.isEmpty else {
+            throw LoadError.emptyTranscript
+        }
+
+        return segments
+    }
+
+    private struct LessonSoundTranscript: Decodable {
+        let transcription: [Entry]
+
+        struct Entry: Decodable {
+            let offsets: Offsets
+            let text: String
+
+            struct Offsets: Decodable {
+                let from: TimeInterval
+                let to: TimeInterval
+
+                private enum CodingKeys: String, CodingKey { case from, to }
+
+                init(from decoder: Decoder) throws {
+                    let container = try decoder.container(keyedBy: CodingKeys.self)
+                    let fromMilliseconds = try container.decode(Double.self, forKey: .from)
+                    let toMilliseconds = try container.decode(Double.self, forKey: .to)
+                    self.from = fromMilliseconds / 1000
+                    self.to = toMilliseconds / 1000
+                }
+            }
+        }
+    }
+
+    enum LoadError: LocalizedError {
+        case missingResource
+        case unreadableFile
+        case decodingFailed
+        case emptyTranscript
+        case invalidDuration
+
+        var errorDescription: String? {
+            switch self {
+            case .missingResource:
+                return "未找到课文数据文件"
+            case .unreadableFile:
+                return "无法读取课文数据文件"
+            case .decodingFailed:
+                return "课文数据格式不正确"
+            case .emptyTranscript:
+                return "课文内容为空"
+            case .invalidDuration:
+                return "课文时间轴无效"
+            }
+        }
+    }
+}
+
+private extension String {
+    var normalizedTranscript: String {
+        let trimmed = trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmed.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+    }
 }
 
 private struct PlaybackButtonStyle: ButtonStyle {

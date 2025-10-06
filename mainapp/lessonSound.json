@@ -1,0 +1,2237 @@
+{
+    "transcription": [
+        {
+            "timestamps": {
+                "from": "00:00:00,000",
+                "to": "00:00:02,000"
+            },
+            "offsets": {
+                "from": 0,
+                "to": 2000
+            },
+            "text": " Expense"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:02,000",
+                "to": "00:00:04,000"
+            },
+            "offsets": {
+                "from": 2000,
+                "to": 4000
+            },
+            "text": " Travel expenses"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:04,000",
+                "to": "00:00:06,000"
+            },
+            "offsets": {
+                "from": 4000,
+                "to": 6000
+            },
+            "text": " Overseas"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:06,000",
+                "to": "00:00:08,000"
+            },
+            "offsets": {
+                "from": 6000,
+                "to": 8000
+            },
+            "text": " Overseas markets"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:08,000",
+                "to": "00:00:10,000"
+            },
+            "offsets": {
+                "from": 8000,
+                "to": 10000
+            },
+            "text": " Satisfied"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:10,000",
+                "to": "00:00:14,000"
+            },
+            "offsets": {
+                "from": 10000,
+                "to": 14000
+            },
+            "text": " I am fully satisfied with the service."
+        },
+        {
+            "timestamps": {
+                "from": "00:00:14,000",
+                "to": "00:00:16,000"
+            },
+            "offsets": {
+                "from": 14000,
+                "to": 16000
+            },
+            "text": " Appear"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:16,000",
+                "to": "00:00:19,050"
+            },
+            "offsets": {
+                "from": 16000,
+                "to": 19050
+            },
+            "text": " Where would the article most likely"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:19,050",
+                "to": "00:00:20,000"
+            },
+            "offsets": {
+                "from": 19050,
+                "to": 20000
+            },
+            "text": " appear?"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:20,000",
+                "to": "00:00:22,000"
+            },
+            "offsets": {
+                "from": 20000,
+                "to": 22000
+            },
+            "text": " Develop"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:22,000",
+                "to": "00:00:24,000"
+            },
+            "offsets": {
+                "from": 22000,
+                "to": 24000
+            },
+            "text": " Develop a plan"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:24,000",
+                "to": "00:00:26,000"
+            },
+            "offsets": {
+                "from": 24000,
+                "to": 26000
+            },
+            "text": " Improve"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:26,000",
+                "to": "00:00:28,000"
+            },
+            "offsets": {
+                "from": 26000,
+                "to": 28000
+            },
+            "text": " Improve customer service"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:28,000",
+                "to": "00:00:30,000"
+            },
+            "offsets": {
+                "from": 28000,
+                "to": 30000
+            },
+            "text": " Reasonable"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:30,000",
+                "to": "00:00:32,000"
+            },
+            "offsets": {
+                "from": 30000,
+                "to": 32000
+            },
+            "text": " A reasonable price"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:32,000",
+                "to": "00:00:34,000"
+            },
+            "offsets": {
+                "from": 32000,
+                "to": 34000
+            },
+            "text": " Unable"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:34,000",
+                "to": "00:00:38,000"
+            },
+            "offsets": {
+                "from": 34000,
+                "to": 38000
+            },
+            "text": " What is the man unable to do?"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:38,000",
+                "to": "00:00:40,000"
+            },
+            "offsets": {
+                "from": 38000,
+                "to": 40000
+            },
+            "text": " Delay"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:40,000",
+                "to": "00:00:43,000"
+            },
+            "offsets": {
+                "from": 40000,
+                "to": 43000
+            },
+            "text": " All flights have been delayed."
+        },
+        {
+            "timestamps": {
+                "from": "00:00:43,000",
+                "to": "00:00:45,000"
+            },
+            "offsets": {
+                "from": 43000,
+                "to": 45000
+            },
+            "text": " Legal"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:45,000",
+                "to": "00:00:47,000"
+            },
+            "offsets": {
+                "from": 45000,
+                "to": 47000
+            },
+            "text": " Legal advice"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:47,000",
+                "to": "00:00:49,000"
+            },
+            "offsets": {
+                "from": 47000,
+                "to": 49000
+            },
+            "text": " Regulation"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:49,000",
+                "to": "00:00:51,000"
+            },
+            "offsets": {
+                "from": 49000,
+                "to": 51000
+            },
+            "text": " Under the regulations"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:51,000",
+                "to": "00:00:53,000"
+            },
+            "offsets": {
+                "from": 51000,
+                "to": 53000
+            },
+            "text": " Expand"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:53,000",
+                "to": "00:00:56,000"
+            },
+            "offsets": {
+                "from": 53000,
+                "to": 56000
+            },
+            "text": " Our business is expanding."
+        },
+        {
+            "timestamps": {
+                "from": "00:00:56,000",
+                "to": "00:00:58,000"
+            },
+            "offsets": {
+                "from": 56000,
+                "to": 58000
+            },
+            "text": " Launch"
+        },
+        {
+            "timestamps": {
+                "from": "00:00:58,000",
+                "to": "00:01:01,000"
+            },
+            "offsets": {
+                "from": 58000,
+                "to": 61000
+            },
+            "text": " The launch of a new product."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:01,000",
+                "to": "00:01:03,000"
+            },
+            "offsets": {
+                "from": 61000,
+                "to": 63000
+            },
+            "text": " Recommendation"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:03,000",
+                "to": "00:01:06,000"
+            },
+            "offsets": {
+                "from": 63000,
+                "to": 66000
+            },
+            "text": " A letter of recommendation."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:06,000",
+                "to": "00:01:08,000"
+            },
+            "offsets": {
+                "from": 66000,
+                "to": 68000
+            },
+            "text": " Direct"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:08,000",
+                "to": "00:01:11,000"
+            },
+            "offsets": {
+                "from": 68000,
+                "to": 71000
+            },
+            "text": " Please direct any questions to me."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:11,000",
+                "to": "00:01:13,000"
+            },
+            "offsets": {
+                "from": 71000,
+                "to": 73000
+            },
+            "text": " Profit"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:13,000",
+                "to": "00:01:15,000"
+            },
+            "offsets": {
+                "from": 73000,
+                "to": 75000
+            },
+            "text": " Increase profits"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:15,000",
+                "to": "00:01:17,000"
+            },
+            "offsets": {
+                "from": 75000,
+                "to": 77000
+            },
+            "text": " Seek"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:17,000",
+                "to": "00:01:20,000"
+            },
+            "offsets": {
+                "from": 77000,
+                "to": 80000
+            },
+            "text": " Seek interns for the summer."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:20,000",
+                "to": "00:01:22,000"
+            },
+            "offsets": {
+                "from": 80000,
+                "to": 82000
+            },
+            "text": " Entry"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:22,000",
+                "to": "00:01:24,000"
+            },
+            "offsets": {
+                "from": 82000,
+                "to": 84000
+            },
+            "text": " The winning entry."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:24,000",
+                "to": "00:01:26,000"
+            },
+            "offsets": {
+                "from": 84000,
+                "to": 86000
+            },
+            "text": " Claim"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:26,000",
+                "to": "00:01:28,000"
+            },
+            "offsets": {
+                "from": 86000,
+                "to": 88000
+            },
+            "text": " File a claim"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:28,000",
+                "to": "00:01:30,000"
+            },
+            "offsets": {
+                "from": 88000,
+                "to": 90000
+            },
+            "text": " Crew"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:30,000",
+                "to": "00:01:32,000"
+            },
+            "offsets": {
+                "from": 90000,
+                "to": 92000
+            },
+            "text": " A repair crew"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:32,000",
+                "to": "00:01:34,000"
+            },
+            "offsets": {
+                "from": 92000,
+                "to": 94000
+            },
+            "text": " Demand"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:34,000",
+                "to": "00:01:36,000"
+            },
+            "offsets": {
+                "from": 94000,
+                "to": 96000
+            },
+            "text": " Meet demand"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:36,000",
+                "to": "00:01:38,000"
+            },
+            "offsets": {
+                "from": 96000,
+                "to": 98000
+            },
+            "text": " Figure"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:38,000",
+                "to": "00:01:40,000"
+            },
+            "offsets": {
+                "from": 98000,
+                "to": 100000
+            },
+            "text": " Sales figures"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:40,000",
+                "to": "00:01:42,000"
+            },
+            "offsets": {
+                "from": 100000,
+                "to": 102000
+            },
+            "text": " Raise"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:42,000",
+                "to": "00:01:44,000"
+            },
+            "offsets": {
+                "from": 102000,
+                "to": 104000
+            },
+            "text": " Raise money for charity"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:44,000",
+                "to": "00:01:46,000"
+            },
+            "offsets": {
+                "from": 104000,
+                "to": 106000
+            },
+            "text": " Attach"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:46,000",
+                "to": "00:01:49,000"
+            },
+            "offsets": {
+                "from": 106000,
+                "to": 109000
+            },
+            "text": " I have attached my resume."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:49,000",
+                "to": "00:01:51,000"
+            },
+            "offsets": {
+                "from": 109000,
+                "to": 111000
+            },
+            "text": " Attract"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:51,000",
+                "to": "00:01:54,000"
+            },
+            "offsets": {
+                "from": 111000,
+                "to": 114000
+            },
+            "text": " A way of attracting customers."
+        },
+        {
+            "timestamps": {
+                "from": "00:01:54,000",
+                "to": "00:01:56,000"
+            },
+            "offsets": {
+                "from": 114000,
+                "to": 116000
+            },
+            "text": " Insurance"
+        },
+        {
+            "timestamps": {
+                "from": "00:01:56,000",
+                "to": "00:02:00,000"
+            },
+            "offsets": {
+                "from": 116000,
+                "to": 120000
+            },
+            "text": " Provide health insurance for employees."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:00,000",
+                "to": "00:02:02,000"
+            },
+            "offsets": {
+                "from": 120000,
+                "to": 122000
+            },
+            "text": " Departure"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:02,000",
+                "to": "00:02:05,000"
+            },
+            "offsets": {
+                "from": 122000,
+                "to": 125000
+            },
+            "text": " The scheduled departure date."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:05,000",
+                "to": "00:02:07,000"
+            },
+            "offsets": {
+                "from": 125000,
+                "to": 127000
+            },
+            "text": " Mayor"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:07,000",
+                "to": "00:02:09,000"
+            },
+            "offsets": {
+                "from": 127000,
+                "to": 129000
+            },
+            "text": " The mayor of Textown."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:09,000",
+                "to": "00:02:11,000"
+            },
+            "offsets": {
+                "from": 129000,
+                "to": 131000
+            },
+            "text": " Balance"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:11,000",
+                "to": "00:02:13,000"
+            },
+            "offsets": {
+                "from": 131000,
+                "to": 133000
+            },
+            "text": " An account balance."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:13,000",
+                "to": "00:02:15,000"
+            },
+            "offsets": {
+                "from": 133000,
+                "to": 135000
+            },
+            "text": " Estimate"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:15,000",
+                "to": "00:02:18,000"
+            },
+            "offsets": {
+                "from": 135000,
+                "to": 138000
+            },
+            "text": " An estimate for the project."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:18,000",
+                "to": "00:02:20,000"
+            },
+            "offsets": {
+                "from": 138000,
+                "to": 140000
+            },
+            "text": " District"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:20,000",
+                "to": "00:02:22,000"
+            },
+            "offsets": {
+                "from": 140000,
+                "to": 142000
+            },
+            "text": " A commercial district."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:22,000",
+                "to": "00:02:24,000"
+            },
+            "offsets": {
+                "from": 142000,
+                "to": 144000
+            },
+            "text": " Former"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:24,000",
+                "to": "00:02:26,000"
+            },
+            "offsets": {
+                "from": 144000,
+                "to": 146000
+            },
+            "text": " A former employee."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:26,000",
+                "to": "00:02:28,000"
+            },
+            "offsets": {
+                "from": 146000,
+                "to": 148000
+            },
+            "text": " Modern"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:28,000",
+                "to": "00:02:30,000"
+            },
+            "offsets": {
+                "from": 148000,
+                "to": 150000
+            },
+            "text": " Design a modern building."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:30,000",
+                "to": "00:02:32,000"
+            },
+            "offsets": {
+                "from": 150000,
+                "to": 152000
+            },
+            "text": " Tip"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:32,000",
+                "to": "00:02:34,000"
+            },
+            "offsets": {
+                "from": 152000,
+                "to": 154000
+            },
+            "text": " Tips on packing."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:34,000",
+                "to": "00:02:36,000"
+            },
+            "offsets": {
+                "from": 154000,
+                "to": 156000
+            },
+            "text": " Establish"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:36,000",
+                "to": "00:02:39,000"
+            },
+            "offsets": {
+                "from": 156000,
+                "to": 159000
+            },
+            "text": " Establish a business."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:39,000",
+                "to": "00:02:41,000"
+            },
+            "offsets": {
+                "from": 159000,
+                "to": 161000
+            },
+            "text": " Option"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:41,000",
+                "to": "00:02:44,000"
+            },
+            "offsets": {
+                "from": 161000,
+                "to": 164000
+            },
+            "text": " An option to change the date."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:44,000",
+                "to": "00:02:46,000"
+            },
+            "offsets": {
+                "from": 164000,
+                "to": 166000
+            },
+            "text": " Retire"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:46,000",
+                "to": "00:02:49,000"
+            },
+            "offsets": {
+                "from": 166000,
+                "to": 169000
+            },
+            "text": " Retire after 20 years of service."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:49,000",
+                "to": "00:02:51,000"
+            },
+            "offsets": {
+                "from": 169000,
+                "to": 171000
+            },
+            "text": " Search"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:51,000",
+                "to": "00:02:54,000"
+            },
+            "offsets": {
+                "from": 171000,
+                "to": 174000
+            },
+            "text": " The search for the next president."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:54,000",
+                "to": "00:02:56,000"
+            },
+            "offsets": {
+                "from": 174000,
+                "to": 176000
+            },
+            "text": " Specific"
+        },
+        {
+            "timestamps": {
+                "from": "00:02:56,000",
+                "to": "00:02:59,000"
+            },
+            "offsets": {
+                "from": 176000,
+                "to": 179000
+            },
+            "text": " A specific example."
+        },
+        {
+            "timestamps": {
+                "from": "00:02:59,000",
+                "to": "00:03:01,000"
+            },
+            "offsets": {
+                "from": 179000,
+                "to": 181000
+            },
+            "text": " Agricultural"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:01,000",
+                "to": "00:03:04,000"
+            },
+            "offsets": {
+                "from": 181000,
+                "to": 184000
+            },
+            "text": " Agricultural technology."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:04,000",
+                "to": "00:03:06,000"
+            },
+            "offsets": {
+                "from": 184000,
+                "to": 186000
+            },
+            "text": " Historical"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:06,000",
+                "to": "00:03:08,000"
+            },
+            "offsets": {
+                "from": 186000,
+                "to": 188000
+            },
+            "text": " Historical figures"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:08,000",
+                "to": "00:03:10,000"
+            },
+            "offsets": {
+                "from": 188000,
+                "to": 190000
+            },
+            "text": " Helpful"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:10,000",
+                "to": "00:03:13,080"
+            },
+            "offsets": {
+                "from": 190000,
+                "to": 193080
+            },
+            "text": " I hope you find this information"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:13,080",
+                "to": "00:03:14,000"
+            },
+            "offsets": {
+                "from": 193080,
+                "to": 194000
+            },
+            "text": " helpful."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:14,000",
+                "to": "00:03:16,000"
+            },
+            "offsets": {
+                "from": 194000,
+                "to": 196000
+            },
+            "text": " Complaint"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:16,000",
+                "to": "00:03:19,000"
+            },
+            "offsets": {
+                "from": 196000,
+                "to": 199000
+            },
+            "text": " Complaints about the noise."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:19,000",
+                "to": "00:03:20,000"
+            },
+            "offsets": {
+                "from": 199000,
+                "to": 200000
+            },
+            "text": " Related"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:20,000",
+                "to": "00:03:24,000"
+            },
+            "offsets": {
+                "from": 200000,
+                "to": 204000
+            },
+            "text": " Experience in a related field."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:24,000",
+                "to": "00:03:26,000"
+            },
+            "offsets": {
+                "from": 204000,
+                "to": 206000
+            },
+            "text": " Simply"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:26,000",
+                "to": "00:03:29,000"
+            },
+            "offsets": {
+                "from": 206000,
+                "to": 209000
+            },
+            "text": " Simply fill out the form below."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:29,000",
+                "to": "00:03:31,000"
+            },
+            "offsets": {
+                "from": 209000,
+                "to": 211000
+            },
+            "text": " Unique"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:31,000",
+                "to": "00:03:34,000"
+            },
+            "offsets": {
+                "from": 211000,
+                "to": 214000
+            },
+            "text": " Offer a unique opportunity."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:34,000",
+                "to": "00:03:36,000"
+            },
+            "offsets": {
+                "from": 214000,
+                "to": 216000
+            },
+            "text": " Concerning"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:36,000",
+                "to": "00:03:39,000"
+            },
+            "offsets": {
+                "from": 216000,
+                "to": 219000
+            },
+            "text": " Any questions concerning the order."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:39,000",
+                "to": "00:03:41,000"
+            },
+            "offsets": {
+                "from": 219000,
+                "to": 221000
+            },
+            "text": " Reputation"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:41,000",
+                "to": "00:03:44,000"
+            },
+            "offsets": {
+                "from": 221000,
+                "to": 224000
+            },
+            "text": " A well-deserved reputation."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:44,000",
+                "to": "00:03:46,000"
+            },
+            "offsets": {
+                "from": 224000,
+                "to": 226000
+            },
+            "text": " Ability"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:46,000",
+                "to": "00:03:50,000"
+            },
+            "offsets": {
+                "from": 226000,
+                "to": 230000
+            },
+            "text": " Ability to speak three languages."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:50,000",
+                "to": "00:03:52,000"
+            },
+            "offsets": {
+                "from": 230000,
+                "to": 232000
+            },
+            "text": " Arrival"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:52,000",
+                "to": "00:03:54,000"
+            },
+            "offsets": {
+                "from": 232000,
+                "to": 234000
+            },
+            "text": " The time of arrival."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:54,000",
+                "to": "00:03:56,000"
+            },
+            "offsets": {
+                "from": 234000,
+                "to": 236000
+            },
+            "text": " Familiar"
+        },
+        {
+            "timestamps": {
+                "from": "00:03:56,000",
+                "to": "00:03:59,000"
+            },
+            "offsets": {
+                "from": 236000,
+                "to": 239000
+            },
+            "text": " I am familiar with the area."
+        },
+        {
+            "timestamps": {
+                "from": "00:03:59,000",
+                "to": "00:04:01,000"
+            },
+            "offsets": {
+                "from": 239000,
+                "to": 241000
+            },
+            "text": " Ideal"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:01,000",
+                "to": "00:04:03,000"
+            },
+            "offsets": {
+                "from": 241000,
+                "to": 243000
+            },
+            "text": " An ideal location."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:03,000",
+                "to": "00:04:05,000"
+            },
+            "offsets": {
+                "from": 243000,
+                "to": 245000
+            },
+            "text": " Maintain"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:05,000",
+                "to": "00:04:08,000"
+            },
+            "offsets": {
+                "from": 245000,
+                "to": 248000
+            },
+            "text": " Maintain a website."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:08,000",
+                "to": "00:04:10,000"
+            },
+            "offsets": {
+                "from": 248000,
+                "to": 250000
+            },
+            "text": " Landscaping"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:10,000",
+                "to": "00:04:13,000"
+            },
+            "offsets": {
+                "from": 250000,
+                "to": 253000
+            },
+            "text": " A landscaping company."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:13,000",
+                "to": "00:04:15,000"
+            },
+            "offsets": {
+                "from": 253000,
+                "to": 255000
+            },
+            "text": " Organize"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:15,000",
+                "to": "00:04:17,000"
+            },
+            "offsets": {
+                "from": 255000,
+                "to": 257000
+            },
+            "text": " Organize an event."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:17,000",
+                "to": "00:04:19,000"
+            },
+            "offsets": {
+                "from": 257000,
+                "to": 259000
+            },
+            "text": " Significant"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:19,000",
+                "to": "00:04:22,000"
+            },
+            "offsets": {
+                "from": 259000,
+                "to": 262000
+            },
+            "text": " A significant increase in profits."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:22,000",
+                "to": "00:04:24,000"
+            },
+            "offsets": {
+                "from": 262000,
+                "to": 264000
+            },
+            "text": " Occasion"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:24,000",
+                "to": "00:04:27,000"
+            },
+            "offsets": {
+                "from": 264000,
+                "to": 267000
+            },
+            "text": " A special occasion."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:27,000",
+                "to": "00:04:29,000"
+            },
+            "offsets": {
+                "from": 267000,
+                "to": 269000
+            },
+            "text": " Standard"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:29,000",
+                "to": "00:04:31,000"
+            },
+            "offsets": {
+                "from": 269000,
+                "to": 271000
+            },
+            "text": " Safety standards"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:31,000",
+                "to": "00:04:33,000"
+            },
+            "offsets": {
+                "from": 271000,
+                "to": 273000
+            },
+            "text": " Background"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:33,000",
+                "to": "00:04:36,000"
+            },
+            "offsets": {
+                "from": 273000,
+                "to": 276000
+            },
+            "text": " An impressive educational background."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:36,000",
+                "to": "00:04:38,000"
+            },
+            "offsets": {
+                "from": 276000,
+                "to": 278000
+            },
+            "text": " Guided"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:38,000",
+                "to": "00:04:40,000"
+            },
+            "offsets": {
+                "from": 278000,
+                "to": 280000
+            },
+            "text": " A guided tour."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:40,000",
+                "to": "00:04:42,000"
+            },
+            "offsets": {
+                "from": 280000,
+                "to": 282000
+            },
+            "text": " Advanced"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:42,000",
+                "to": "00:04:44,000"
+            },
+            "offsets": {
+                "from": 282000,
+                "to": 284000
+            },
+            "text": " Advanced technology."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:44,000",
+                "to": "00:04:46,000"
+            },
+            "offsets": {
+                "from": 284000,
+                "to": 286000
+            },
+            "text": " Alternative"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:46,000",
+                "to": "00:04:49,000"
+            },
+            "offsets": {
+                "from": 286000,
+                "to": 289000
+            },
+            "text": " An alternative date."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:49,000",
+                "to": "00:04:51,000"
+            },
+            "offsets": {
+                "from": 289000,
+                "to": 291000
+            },
+            "text": " Confident"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:51,000",
+                "to": "00:04:54,000"
+            },
+            "offsets": {
+                "from": 291000,
+                "to": 294000
+            },
+            "text": " I'm confident that I can do it."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:54,000",
+                "to": "00:04:56,000"
+            },
+            "offsets": {
+                "from": 294000,
+                "to": 296000
+            },
+            "text": " Decade"
+        },
+        {
+            "timestamps": {
+                "from": "00:04:56,000",
+                "to": "00:04:59,000"
+            },
+            "offsets": {
+                "from": 296000,
+                "to": 299000
+            },
+            "text": " Over the past two decades."
+        },
+        {
+            "timestamps": {
+                "from": "00:04:59,000",
+                "to": "00:05:01,000"
+            },
+            "offsets": {
+                "from": 299000,
+                "to": 301000
+            },
+            "text": " Initial"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:01,000",
+                "to": "00:05:04,000"
+            },
+            "offsets": {
+                "from": 301000,
+                "to": 304000
+            },
+            "text": " Attend the initial training session."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:04,000",
+                "to": "00:05:06,000"
+            },
+            "offsets": {
+                "from": 304000,
+                "to": 306000
+            },
+            "text": " Separate"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:06,000",
+                "to": "00:05:08,740"
+            },
+            "offsets": {
+                "from": 306000,
+                "to": 308740
+            },
+            "text": " My order arrived in two separate"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:08,740",
+                "to": "00:05:10,000"
+            },
+            "offsets": {
+                "from": 308740,
+                "to": 310000
+            },
+            "text": " shipments."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:10,000",
+                "to": "00:05:12,000"
+            },
+            "offsets": {
+                "from": 310000,
+                "to": 312000
+            },
+            "text": " Celebration"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:12,000",
+                "to": "00:05:15,000"
+            },
+            "offsets": {
+                "from": 312000,
+                "to": 315000
+            },
+            "text": " The grand opening celebration."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:15,000",
+                "to": "00:05:17,000"
+            },
+            "offsets": {
+                "from": 315000,
+                "to": 317000
+            },
+            "text": " Concern"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:17,000",
+                "to": "00:05:20,000"
+            },
+            "offsets": {
+                "from": 317000,
+                "to": 320000
+            },
+            "text": " Express concern"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:20,000",
+                "to": "00:05:22,000"
+            },
+            "offsets": {
+                "from": 320000,
+                "to": 322000
+            },
+            "text": " Environment"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:22,000",
+                "to": "00:05:24,000"
+            },
+            "offsets": {
+                "from": 322000,
+                "to": 324000
+            },
+            "text": " Work environment"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:24,000",
+                "to": "00:05:26,000"
+            },
+            "offsets": {
+                "from": 324000,
+                "to": 326000
+            },
+            "text": " Operate"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:26,000",
+                "to": "00:05:29,000"
+            },
+            "offsets": {
+                "from": 326000,
+                "to": 329000
+            },
+            "text": " Operate a machine safely."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:29,000",
+                "to": "00:05:31,000"
+            },
+            "offsets": {
+                "from": 329000,
+                "to": 331000
+            },
+            "text": " Various"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:31,000",
+                "to": "00:05:34,000"
+            },
+            "offsets": {
+                "from": 331000,
+                "to": 334000
+            },
+            "text": " Various designs and patterns."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:34,000",
+                "to": "00:05:36,000"
+            },
+            "offsets": {
+                "from": 334000,
+                "to": 336000
+            },
+            "text": " Brief"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:36,000",
+                "to": "00:05:38,000"
+            },
+            "offsets": {
+                "from": 336000,
+                "to": 338000
+            },
+            "text": " A brief report."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:38,000",
+                "to": "00:05:40,000"
+            },
+            "offsets": {
+                "from": 338000,
+                "to": 340000
+            },
+            "text": " Full-time"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:40,000",
+                "to": "00:05:42,000"
+            },
+            "offsets": {
+                "from": 340000,
+                "to": 342000
+            },
+            "text": " Full-time employees."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:42,000",
+                "to": "00:05:44,000"
+            },
+            "offsets": {
+                "from": 342000,
+                "to": 344000
+            },
+            "text": " Overall"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:44,000",
+                "to": "00:05:46,000"
+            },
+            "offsets": {
+                "from": 344000,
+                "to": 346000
+            },
+            "text": " The overall budget."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:46,000",
+                "to": "00:05:48,000"
+            },
+            "offsets": {
+                "from": 346000,
+                "to": 348000
+            },
+            "text": " Achieve"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:48,000",
+                "to": "00:05:51,000"
+            },
+            "offsets": {
+                "from": 348000,
+                "to": 351000
+            },
+            "text": " Achieve a sales target."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:51,000",
+                "to": "00:05:53,000"
+            },
+            "offsets": {
+                "from": 351000,
+                "to": 353000
+            },
+            "text": " Basis"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:53,000",
+                "to": "00:05:56,000"
+            },
+            "offsets": {
+                "from": 353000,
+                "to": 356000
+            },
+            "text": " Pay on a monthly basis."
+        },
+        {
+            "timestamps": {
+                "from": "00:05:56,000",
+                "to": "00:05:58,000"
+            },
+            "offsets": {
+                "from": 356000,
+                "to": 358000
+            },
+            "text": " Complex"
+        },
+        {
+            "timestamps": {
+                "from": "00:05:58,000",
+                "to": "00:06:00,000"
+            },
+            "offsets": {
+                "from": 358000,
+                "to": 360000
+            },
+            "text": " A sports complex."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:00,000",
+                "to": "00:06:02,000"
+            },
+            "offsets": {
+                "from": 360000,
+                "to": 362000
+            },
+            "text": " Delighted"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:02,000",
+                "to": "00:06:05,000"
+            },
+            "offsets": {
+                "from": 362000,
+                "to": 365000
+            },
+            "text": " We are delighted to see you."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:05,000",
+                "to": "00:06:07,000"
+            },
+            "offsets": {
+                "from": 365000,
+                "to": 367000
+            },
+            "text": " Obtain"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:07,000",
+                "to": "00:06:10,000"
+            },
+            "offsets": {
+                "from": 367000,
+                "to": 370000
+            },
+            "text": " Obtain information from the internet."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:10,000",
+                "to": "00:06:12,000"
+            },
+            "offsets": {
+                "from": 370000,
+                "to": 372000
+            },
+            "text": " Honor"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:12,000",
+                "to": "00:06:14,000"
+            },
+            "offsets": {
+                "from": 372000,
+                "to": 374000
+            },
+            "text": " Honor an employee."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:14,000",
+                "to": "00:06:16,000"
+            },
+            "offsets": {
+                "from": 374000,
+                "to": 376000
+            },
+            "text": " Properly"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:16,000",
+                "to": "00:06:19,000"
+            },
+            "offsets": {
+                "from": 376000,
+                "to": 379000
+            },
+            "text": " Properly trained staff."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:19,000",
+                "to": "00:06:21,000"
+            },
+            "offsets": {
+                "from": 379000,
+                "to": 381000
+            },
+            "text": " Suitable"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:21,000",
+                "to": "00:06:24,000"
+            },
+            "offsets": {
+                "from": 381000,
+                "to": 384000
+            },
+            "text": " Suitable for outdoor use."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:24,000",
+                "to": "00:06:26,000"
+            },
+            "offsets": {
+                "from": 384000,
+                "to": 386000
+            },
+            "text": " Electronic"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:26,000",
+                "to": "00:06:29,000"
+            },
+            "offsets": {
+                "from": 386000,
+                "to": 389000
+            },
+            "text": " Personal electronic devices."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:29,000",
+                "to": "00:06:31,000"
+            },
+            "offsets": {
+                "from": 389000,
+                "to": 391000
+            },
+            "text": " Finalize"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:31,000",
+                "to": "00:06:34,000"
+            },
+            "offsets": {
+                "from": 391000,
+                "to": 394000
+            },
+            "text": " Finalize a contract."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:34,000",
+                "to": "00:06:36,000"
+            },
+            "offsets": {
+                "from": 394000,
+                "to": 396000
+            },
+            "text": " Generous"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:36,000",
+                "to": "00:06:39,000"
+            },
+            "offsets": {
+                "from": 396000,
+                "to": 399000
+            },
+            "text": " A generous donation to a charity."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:39,000",
+                "to": "00:06:41,000"
+            },
+            "offsets": {
+                "from": 399000,
+                "to": 401000
+            },
+            "text": " Preparation"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:41,000",
+                "to": "00:06:44,000"
+            },
+            "offsets": {
+                "from": 401000,
+                "to": 404000
+            },
+            "text": " In preparation for an event."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:44,000",
+                "to": "00:06:46,000"
+            },
+            "offsets": {
+                "from": 404000,
+                "to": 406000
+            },
+            "text": " Duty"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:46,000",
+                "to": "00:06:49,000"
+            },
+            "offsets": {
+                "from": 406000,
+                "to": 409000
+            },
+            "text": " Main duties of a teacher."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:49,000",
+                "to": "00:06:51,000"
+            },
+            "offsets": {
+                "from": 409000,
+                "to": 411000
+            },
+            "text": " Earn"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:51,000",
+                "to": "00:06:53,000"
+            },
+            "offsets": {
+                "from": 411000,
+                "to": 413000
+            },
+            "text": " Earn the respect of people."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:53,000",
+                "to": "00:06:55,000"
+            },
+            "offsets": {
+                "from": 413000,
+                "to": 415000
+            },
+            "text": " Willing"
+        },
+        {
+            "timestamps": {
+                "from": "00:06:55,000",
+                "to": "00:06:58,000"
+            },
+            "offsets": {
+                "from": 415000,
+                "to": 418000
+            },
+            "text": " I am willing to work overseas."
+        },
+        {
+            "timestamps": {
+                "from": "00:06:58,000",
+                "to": "00:07:00,000"
+            },
+            "offsets": {
+                "from": 418000,
+                "to": 420000
+            },
+            "text": " Worth"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:00,000",
+                "to": "00:07:03,000"
+            },
+            "offsets": {
+                "from": 420000,
+                "to": 423000
+            },
+            "text": " The book is worth reading."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:03,000",
+                "to": "00:07:05,000"
+            },
+            "offsets": {
+                "from": 423000,
+                "to": 425000
+            },
+            "text": " Fund"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:05,000",
+                "to": "00:07:08,000"
+            },
+            "offsets": {
+                "from": 425000,
+                "to": 428000
+            },
+            "text": " A project funded by the government."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:08,000",
+                "to": "00:07:10,000"
+            },
+            "offsets": {
+                "from": 428000,
+                "to": 430000
+            },
+            "text": " Overnight"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:10,000",
+                "to": "00:07:13,000"
+            },
+            "offsets": {
+                "from": 430000,
+                "to": 433000
+            },
+            "text": " Free overnight delivery."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:13,000",
+                "to": "00:07:15,000"
+            },
+            "offsets": {
+                "from": 433000,
+                "to": 435000
+            },
+            "text": " Particularly"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:15,000",
+                "to": "00:07:18,000"
+            },
+            "offsets": {
+                "from": 435000,
+                "to": 438000
+            },
+            "text": " Particularly interested in history."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:18,000",
+                "to": "00:07:20,000"
+            },
+            "offsets": {
+                "from": 438000,
+                "to": 440000
+            },
+            "text": " Aspect"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:20,000",
+                "to": "00:07:23,000"
+            },
+            "offsets": {
+                "from": 440000,
+                "to": 443000
+            },
+            "text": " Every aspect of a project."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:23,000",
+                "to": "00:07:25,000"
+            },
+            "offsets": {
+                "from": 443000,
+                "to": 445000
+            },
+            "text": " Hesitate"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:25,000",
+                "to": "00:07:28,000"
+            },
+            "offsets": {
+                "from": 445000,
+                "to": 448000
+            },
+            "text": " Please do not hesitate to contact us."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:28,000",
+                "to": "00:07:30,000"
+            },
+            "offsets": {
+                "from": 448000,
+                "to": 450000
+            },
+            "text": " Involved"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:30,000",
+                "to": "00:07:33,000"
+            },
+            "offsets": {
+                "from": 450000,
+                "to": 453000
+            },
+            "text": " I was not involved with the project."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:33,000",
+                "to": "00:07:35,000"
+            },
+            "offsets": {
+                "from": 453000,
+                "to": 455000
+            },
+            "text": " Regularly"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:35,000",
+                "to": "00:07:38,000"
+            },
+            "offsets": {
+                "from": 455000,
+                "to": 458000
+            },
+            "text": " A regularly updated list."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:38,000",
+                "to": "00:07:40,000"
+            },
+            "offsets": {
+                "from": 458000,
+                "to": 460000
+            },
+            "text": " Scholarship"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:40,000",
+                "to": "00:07:43,000"
+            },
+            "offsets": {
+                "from": 460000,
+                "to": 463000
+            },
+            "text": " Apply for a scholarship."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:43,000",
+                "to": "00:07:44,000"
+            },
+            "offsets": {
+                "from": 463000,
+                "to": 464000
+            },
+            "text": " Shortly"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:44,000",
+                "to": "00:07:47,000"
+            },
+            "offsets": {
+                "from": 464000,
+                "to": 467000
+            },
+            "text": " The meeting will begin shortly."
+        },
+        {
+            "timestamps": {
+                "from": "00:07:47,000",
+                "to": "00:07:49,000"
+            },
+            "offsets": {
+                "from": 467000,
+                "to": 469000
+            },
+            "text": " Automobile"
+        },
+        {
+            "timestamps": {
+                "from": "00:07:49,000",
+                "to": "00:07:52,000"
+            },
+            "offsets": {
+                "from": 469000,
+                "to": 472000
+            },
+            "text": " Automobile Manufacturing"
+        }
+    ]
+}
